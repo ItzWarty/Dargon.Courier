@@ -12,15 +12,6 @@ using System.Net;
 using Dargon.Courier.Peering;
 
 namespace Dargon.Courier {
-   public interface CourierClientFactory {
-      CourierClient CreateUdpCourierClient(int port, CourierClientConfiguration clientConfiguration = null);
-   }
-
-   public class CourierClientConfiguration {
-      public Guid Identifier { get; set; } = Guid.Empty;
-      public string Name { get; set; } = null;
-   }
-
    public class CourierClientFactoryImpl : CourierClientFactory {
       private readonly GuidProxy guidProxy;
       private readonly IThreadingProxy threadingProxy;

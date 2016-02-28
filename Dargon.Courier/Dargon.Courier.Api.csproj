@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CourierClientConfiguration.cs" />
+    <Compile Include="CourierClientFactory.cs" />
     <Compile Include="Identities\CourierEndpointExtensions.cs" />
     <Compile Include="Identities\ManageableCourierEndpoint.cs" />
     <Compile Include="Identities\ReadableCourierEndpoint.cs" />
